@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/saeid/Desktop/Pacman_sfml'
+g++ -Wall -Wextra -std=c++17 -ggdb -Iinclude -Llib src/main.cpp -o bin/main -lsfml-graphics -lsfml-window -lsfml-system
+make: Leaving directory '/home/saeid/Desktop/Pacman_sfml'
+ 
