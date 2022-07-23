@@ -8,7 +8,10 @@
 
 #define PM_WINDOW_TITLE "PAC-MAN"
 
-
+#define PM_TEXT_SET_STRING 
+"   WELLCOME TO PAC-MAN GAME  
+    
+    For Play The Game Click on StartGame button"
 
 
 #endif
