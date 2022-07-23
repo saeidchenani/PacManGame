@@ -23,7 +23,7 @@ namespace PacMan
         ~Button();
 
 
-        void update(sf::Vector2f );
+        void update(sf::RenderWindow* );
         
         void render(sf::RenderTarget *);
 
