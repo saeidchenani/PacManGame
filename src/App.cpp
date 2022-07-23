@@ -13,7 +13,7 @@ void App::startGame()
 
     //Initilize the vector of States
     for (auto& state: stateVec)
-    {
+    {          
         state = nullptr;
     }
 
@@ -21,9 +21,9 @@ void App::startGame()
     //end Initilize
 
     //CREATE FIRST GAME STATE THAT IS MENU-PAGE and USING POLYMORPHISM
-    this->stateVec.push_back( TitlePage(window,&stateVec));
+    this->stateVec.push_back( new TitlePage(window,&stateVec));
 
-
+     
 }
 
 

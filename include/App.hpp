@@ -17,7 +17,7 @@ namespace PacMan
        
 
         //start and initilize the game
-        void startGame();
+        void startGame();    
 
         //update state function
         void update();
