@@ -1,25 +1,20 @@
-#include <SFML/Window.hpp>
+
+#include "../include/App.hpp"
+
+using namespace PacMan;
 #include <iostream>
-int main() 
+
+
+
+    
+    
+int main()
 {
-    sf::Window window(sf::VideoMode(800,600),"pacman");
+   
+   App* app = new App();
 
-    while ( window.isOpen())
-    {
-        
-        sf::Event evnt;
-        
-        while ( window.pollEvent(evnt))
-        {
-            if(evnt.type== sf::Event::Closed)
-            {   
-                cout << "are you shour??";
+   app->startGame();
+    
 
-                window.close();
-            }
-        }
-        
-    }
-
- return 0;   
+    return 0;
 }
