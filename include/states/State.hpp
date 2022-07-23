@@ -18,7 +18,7 @@ namespace PacMan
 
         //update objects of each state 
         virtual State* update()=0;
-
+    
         //for draw state
         virtual void render()=0;
 
