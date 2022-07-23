@@ -3,7 +3,8 @@
 #include "SFML/Window.hpp"
 #include "SFML/Graphics.hpp"
 #include "SFML/System.hpp"
-
+#include "../../Config.hpp"
+#include <string.h>
 using namespace PacMan;
 
 
@@ -21,10 +22,14 @@ TitlePage::TitlePage(sf::RenderWindow * window, std::vector<State*>* stateListes
 
     }
 
-    //set PacMan 
-    if ( bg_font.loadFromFile())
+    //set Instructions that tell the player how to act
+    if ( bg_font.loadFromFile("../../../Font/vazir-font/Vazir.ttf") )
     {
-        /* code */
+        bg_text.setFont(bg_font);
+        bg_text.setString(std::string(PM_TEXT_SET_STRING));
+        bg_text.setCharacterSize(20);	
+        bg_text.setFillColor(sf::Color(235,201,46));
+        bg_text.setPosition( sf::Vector2f(330,400));
     }
     
 
@@ -43,7 +48,7 @@ void TitlePage::render()
 {
     window->clear(sf::Color::Black);
 
-
+       
 
     window->display();
 }

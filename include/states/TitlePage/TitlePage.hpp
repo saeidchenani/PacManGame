@@ -17,7 +17,7 @@ namespace PacMan{
 
     private:
         //BackGround Texture 
-        sf::Texture bg_txtur;
+        sf::Texture bg_txtur;    
         //BackGround Sprite
         sf::Sprite bg_sp;
 
