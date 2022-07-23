@@ -42,9 +42,11 @@ TitlePage::~TitlePage()
     delete newGame_btn;
 }
 
-State* TitlePage::update()
-{
-    return this;
+void TitlePage::update()
+{   
+
+    
+    
 } 
 
 

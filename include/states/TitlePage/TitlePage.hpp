@@ -13,7 +13,7 @@ namespace PacMan{
 
         TitlePage(sf::RenderWindow *, std::vector<State*>* );
         ~TitlePage();
-        State* update();
+        void update();
         void render();
 
     private:
