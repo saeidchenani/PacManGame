@@ -29,13 +29,18 @@ TitlePage::TitlePage(sf::RenderWindow * window, std::vector<State*>* stateListes
         bg_text.setString(std::string(PM_TEXT_SET_STRING));
         bg_text.setCharacterSize(20);	
         bg_text.setFillColor(sf::Color(235,201,46));
-        bg_text.setPosition( sf::Vector2f(330,400));
+        bg_text.setPosition( sf::Vector2f(150,400));
+        
     }
     
-
-    
+    //Create button object
+    newGame_btn= new Button(600,600,70,70,bg_font,"NEW-GAME");
 }
 
+TitlePage::~TitlePage()
+{
+    delete newGame_btn;
+}
 
 State* TitlePage::update()
 {

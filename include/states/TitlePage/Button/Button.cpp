@@ -19,7 +19,7 @@ Button::Button(float xpos, float ypos, float width, float height, sf::Font font,
 }
        
 
-
+// Call Update function in each frame 
 void Button::update(sf::RenderWindow * window)
 {
     //IDEL
@@ -38,6 +38,7 @@ void Button::update(sf::RenderWindow * window)
         {
             // BTN PRESSED
             this->btn_state=PRESSED_BTN;
+            
         }
         
     }

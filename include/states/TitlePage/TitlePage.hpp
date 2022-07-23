@@ -2,6 +2,7 @@
 #define TITLEPAGE_HPP
 #include "SFML/Graphics.hpp"
 #include "../State.hpp"
+#include "Button/Button.hpp"
 namespace PacMan{
 
 
@@ -25,6 +26,8 @@ namespace PacMan{
         sf::Font bg_font;
         //BackGround Text
         sf::Text bg_text;
+
+        Button * newGame_btn;
     };
     
     
